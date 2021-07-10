@@ -40,6 +40,7 @@ export default {
   beforeMount() {
     this.getUserLocation();
     this.$store.dispatch("datebuilder");
+    this.fun();
   },
   computed: {
     weather() {
@@ -63,7 +64,6 @@ export default {
     getUserLocation() {
       navigator.geolocation.getCurrentPosition(
         this.succesfullLookUp,
-        this.fun()
       );
       setTimeout(() => {
         this.fun2();
@@ -115,6 +115,7 @@ export default {
     padding: 0.3rem;
     background: $font-gray;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .sideBarContent {
