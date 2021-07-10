@@ -2,16 +2,18 @@
   <div class="maincontent">
     <futureforecast />
     <otherinfo />
+    <credits />
   </div>
 </template>
 
 <script>
+import Credits from './credits.vue';
 import Futureforecast from "./maincontent/futureforecast.vue";
 import Otherinfo from "./maincontent/otherinfo.vue";
 
 export default {
   name: "maincontent",
-  components: { Futureforecast, Otherinfo },
+  components: { Futureforecast, Otherinfo, Credits },
 };
 </script>
 
