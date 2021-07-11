@@ -71,7 +71,7 @@ export default {
     },
     succesfullLookUp(position) {
       let { latitude, longitude } = position.coords;
-      console.log(position.coords);
+      // console.log(position.coords);
       this.$store.dispatch("setLatitude", latitude);
       this.$store.dispatch("setLongitude", longitude);
       this.$store.dispatch("getCurrentLocation");
