@@ -1,6 +1,6 @@
 <template>
   <div class="sideBar">
-    <div class="myLocation" @click="getUserLocation">
+    <div class="myLocation" @click="getUserLocation" title="Live Location">
       <i class="material-icons">gps_fixed</i>
     </div>
     <location-search-bar />
