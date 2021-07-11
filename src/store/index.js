@@ -15,19 +15,19 @@ export default createStore({
   mutations: {
     getLocationWoeid(state, payload) {
       state.woeid_location = payload[0].woeid;
-      console.log(state.woeid_location);
+      // console.log(state.woeid_location);
     },
     updateLocation(state, location) {
       state.location = location;
     },
     getWeatherInfo(state, payload) {
       state.weather = payload;
-      console.log(state.weather);
-      console.log(state.weather.consolidated_weather[0].weather_state_name);
+      // console.log(state.weather);
+      // console.log(state.weather.consolidated_weather[0].weather_state_name);
     },
     changeIfSearch(state) {
       state.ifSearch = !state.ifSearch;
-      console.log(state.ifSearch);
+      // console.log(state.ifSearch);
     },
     datebuilder(state) {
       let d = new Date();
@@ -51,7 +51,7 @@ export default createStore({
       state.date = `${day}. ${date} ${month} `;
     },
     getCurrentLocation(state, payload) {
-      console.log(payload, state.latitude, state.longitude);
+      // console.log(payload, state.latitude, state.longitude);
       state.woeid_location = payload[0].woeid;
       state.location = payload[0].title;
       // console.log(state.woeid_location)

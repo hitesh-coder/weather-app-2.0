@@ -67,7 +67,7 @@ export default {
       );
       setTimeout(() => {
         this.fun2();
-      }, 5000);
+      }, 2000);
     },
     succesfullLookUp(position) {
       let { latitude, longitude } = position.coords;
