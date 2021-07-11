@@ -62,9 +62,7 @@ export default {
       );
     },
     getUserLocation() {
-      navigator.geolocation.getCurrentPosition(
-        this.succesfullLookUp,
-      );
+      navigator.geolocation.getCurrentPosition(this.succesfullLookUp);
       setTimeout(() => {
         this.fun2();
       }, 2000);

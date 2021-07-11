@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Credits from './credits.vue';
+import Credits from "./credits.vue";
 import Futureforecast from "./maincontent/futureforecast.vue";
 import Otherinfo from "./maincontent/otherinfo.vue";
 
